@@ -1,0 +1,39 @@
+<div id="toolbar" layout="row" layout-align="start center" class="md-menu-toolbar md-whiteframe-1dp">
+    <md-button class="md-icon-button" ng-click="self.toggleSidenav('sidenav-menu')" hide-gt-sm>
+        <md-icon md-font-icon="mdi mdi-menu mdi-24px"></md-icon>
+    </md-button>
+
+    <div flex>
+        <search-bar></search-bar>
+    </div>
+
+    <div class="toolbar-separator"></div>
+
+    <div layout="row" layout-align="start center">
+
+        <md-menu class="user-menu-bar" md-position-mode="left bottom">
+            <md-button class="user-button" ng-click="$mdMenu.open()">
+                <div layout="row" layout-align="space-between center">
+                    <img src="assets/images/avatar.jpg" alt="Avatar" class="avatar">
+                    <span class="username" hide show-gt-sm>Monte Cristo</span>
+                    <md-icon md-font-icon="mdi mdi-chevron-down mdi-18px" hide-xs></md-icon>
+                </div>
+            </md-button>
+            <md-menu-content width="3">
+                <md-menu-item>
+                    <md-button>Profile</md-button>
+                </md-menu-item>
+
+                <md-menu-item>
+                    <md-button>Inbox</md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+
+        <div class="toolbar-separator"></div>
+
+        <md-button class="md-icon-button">
+            <md-icon md-font-icon="mdi mdi-bell mdi-24px"></md-icon>
+        </md-button>
+    </div>
+</div>

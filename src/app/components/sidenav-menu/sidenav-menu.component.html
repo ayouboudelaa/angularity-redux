@@ -1,0 +1,27 @@
+<div id="sidenav-menu">
+    <div class="header">
+        <div class="logo">
+            <a ui-sref="dashboard">
+                <img src="assets/images/logo.svg" alt="Logo">
+                <h1>Angularity</h1>
+            </a>
+        </div>
+    </div>
+    <md-divider></md-divider>
+    <md-content>
+        <md-list flex>
+            <div layout="column">
+                <md-list-item class="md-1-line" ui-sref="{{ item.route }}" ng-repeat="item in self.items">
+                    <div class="md-list-item-text" layout="row">
+                        <md-icon md-font-icon="mdi {{ item.icon }} mdi-18px"></md-icon>
+                        <span class="text">{{ item.name }}</span>
+                    </div>
+                </md-list-item>
+            </div>
+        </md-list>
+    </md-content>
+    <md-divider></md-divider>
+    <div class="footer">
+        © 2018 Angularity - Ayoub Ba
+    </div>
+</div>

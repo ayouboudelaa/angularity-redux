@@ -1,0 +1,8 @@
+<div id="search-bar" layout="row" layout-align="start center" flex>
+    <md-autocomplete md-search-text="self.searchText" md-items="item in self.querySearch(self.searchText)" md-item-text="item.name"
+        md-min-length="0" placeholder="Search" flex>
+        <md-item-template>
+            <span>{{ item.name }}</span>
+        </md-item-template>
+    </md-autocomplete>
+</div>

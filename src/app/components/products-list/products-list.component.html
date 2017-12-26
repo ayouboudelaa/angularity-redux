@@ -1,0 +1,11 @@
+<div layout="column" layout-padding class="md-whiteframe-1dp white-background">
+    <h3 class="md-title">Products List</h3>
+    <md-divider></md-divider>
+    <div layout="column" layout-padding>
+        <md-list>
+            <md-list-item ui-sref="productsList.productDetails({ id: product.id })" ng-click="null" ng-repeat="product in self.productsList.items">
+                <p>{{ product.name }}</p>
+            </md-list-item>
+        </md-list>
+    </div>
+</div>

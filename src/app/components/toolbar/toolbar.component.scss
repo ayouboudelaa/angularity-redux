@@ -1,0 +1,28 @@
+#toolbar {
+    height: $toolbarHeight;
+    min-height: $toolbarHeight;
+    max-height: $toolbarHeight;
+    background-color: $toolbarColor;
+    
+    .user-menu-bar {
+        height: $toolbarHeight;
+        padding: 0;
+    
+        .user-button {
+            margin: 0;
+            padding: 0 16px;
+            height: $toolbarHeight;
+            text-transform: none;
+    
+            .username {
+                margin: 0 12px 0 8px;
+            }
+        }
+    }
+
+    .toolbar-separator {
+        height: $toolbarHeight;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.10);
+    }
+}

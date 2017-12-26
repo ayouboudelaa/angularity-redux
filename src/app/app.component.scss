@@ -1,0 +1,120 @@
+@import '~mdi/css/materialdesignicons.min.css';
+
+@import '~angular-material/angular-material';
+
+$font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+$html-font-size: 62.5%;
+$body-font-size: 1.6rem;
+
+$toolbarHeight: 64px;
+$toolbarColor: #FFFFFF;
+
+$sidenavMenuWidth: 256px;
+$sidenavMenuColor: #37474F;
+
+html {
+    font-size: $html-font-size;
+    font-family: $font-family;
+    line-height: 1.4;
+}
+
+body {
+    font-size: $body-font-size;
+}
+
+html, body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+.main-layout {
+    height: 100%;
+    max-height: 100%;
+}
+
+.white-background {
+    background-color: #FFFFFF;
+}
+
+.sidenav-menu {
+    width: $sidenavMenuWidth;
+    min-width: $sidenavMenuWidth;
+    max-width: $sidenavMenuWidth;
+    background-color: $sidenavMenuColor;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover, &:active {
+        text-decoration: underline;
+    }
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold, strong {
+    font-weight: bold;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.avatar {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+
+    &.square {
+        border-radius: 0;
+    }
+
+    &.small {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    &.big {
+        width: 64px;
+        min-width: 64px;
+        height: 64px;
+        line-height: 64px;
+    }
+
+    &.huge {
+        width: 96px;
+        min-width: 96px;
+        height: 96px;
+        line-height: 96px;
+    }
+}
+
+@import 'components/components';

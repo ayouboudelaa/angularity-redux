@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Pizza",
+            "description": "Delicious Pizza over here !"
+        },
+        {
+            "id": 2,
+            "name": "Tacos",
+            "description": "Try it ! You'll enjoy it."
+        },
+        {
+            "id": 3,
+            "name": "Coca Cola",
+            "description": "Can you imagine the world without Coca Cola !"
+        }
+    ]
+}

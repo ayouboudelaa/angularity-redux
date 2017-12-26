@@ -1,0 +1,15 @@
+<div layout="row" class="main-layout" flex>
+    <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="sidenav-menu" 
+        class="sidenav-menu md-whiteframe-6dp">
+        <sidenav-menu items="self.items"></sidenav-menu>
+    </md-sidenav>
+    <div layout="column" flex>
+        <md-progress-linear md-mode="indeterminate" class="md-accent"></md-progress-linear>
+        <toolbar></toolbar>
+        <div layout-margin>
+            <md-content class="md-padding">
+                <div ui-view="main"></div>
+            </md-content>
+        </div>
+    </div>
+</div>
