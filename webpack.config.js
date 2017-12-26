@@ -28,14 +28,12 @@ const _module = {
         },
         {
             test: /\.(scss|sass)$/,
-            use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: [
-                    { loader: 'css-loader' },
-                    { loader: 'sass-loader' }
-                    /* sass-resources-loader */
-                ]
-            })
+            use: [
+                { loader: 'style-loader' },
+                { loader: 'css-loader' },
+                { loader: 'sass-loader' }
+                /* sass-resources-loader */
+            ]
         },
         {
             test: /\.(jpg|png|gif)$/,
