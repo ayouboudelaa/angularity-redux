@@ -4,14 +4,14 @@ import { router } from 'redux-ui-router'
 import INITIAL_STATE from './app.state'
 // Reducers.
 import counter from './components/dashboard/counter'
-import productDetails from './components/product-details/product-details'
-import productsList from './components/products-list/products-list'
+import currentProduct from './components/product-details/current-product'
+import products from './components/products-list/products'
 
 
 const rootReducer = combineReducers({
     counter,
-    currentProduct: productDetails,
-    productsList,
+    currentProduct,
+    products,
     router
 })
 

@@ -40,6 +40,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "concurrently": "^3.5.1",
@@ -52,6 +53,13 @@
     "ng-annotate-loader": "^0.6.1",
     "node-sass": "^4.7.2",
     "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux-devtools": "^3.4.1",
+    "redux-devtools-dock-monitor": "^1.1.3",
+    "redux-devtools-log-monitor": "^1.4.0",
+    "redux-slider-monitor": "^2.0.0-1",
     "sass-loader": "^6.0.6",
     "sass-resources-loader": "^1.3.1",
     "style-loader": "^0.19.1",
@@ -64,7 +72,8 @@
       "transform-object-rest-spread"
     ],
     "presets": [
-      "env"
+      "env",
+      "react"
     ]
   }
 }

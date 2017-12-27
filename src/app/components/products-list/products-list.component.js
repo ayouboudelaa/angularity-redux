@@ -1,20 +1,25 @@
-import { fetchProducts, fetchProductsSuccess, fetchProductsFailure, resetProducts } from './products-list'
+import {
+    fetchProducts,
+    fetchProductsSuccess,
+    fetchProductsFailure,
+    resetProducts
+} from './products'
 
 class ProductsListComponent {
-    constructor($ngRedux, productService) {
+    constructor($ngRedux, ProductService) {
         'ngInject'
 
         this._$ngRedux = $ngRedux
-        this._productService = productService
+        this._ProductService = ProductService
     }
 
     $onInit() {
         this._unsubscribe = this._$ngRedux.connect(
-            state => ({ productsList: state.productsList }),
+            state => ({ products: state.products }),
             dispatch => ({
                 fetchProducts: () => {
                     // We must use redux-promise instead of redux-thunk.
-                    dispatch(fetchProducts(this._productService))
+                    dispatch(fetchProducts(this._ProductService))
                         .then(response => {
                             response.error ?
                                 dispatch(fetchProductsFailure(response.payload)) :

@@ -10,7 +10,7 @@ class AppComponent {
             }, {
                 name: 'Products',
                 icon: 'mdi-cart',
-                route: 'productsList'
+                route: 'products'
             }, {
                 name: 'Stores',
                 icon: 'mdi-store',

@@ -5,7 +5,7 @@ const INITIAL_STATE = {
         error: null,
         isFetching: false
     },
-    productsList: {
+    products: {
         items: [],
         error: null,
         isFetching: false

@@ -12,7 +12,10 @@ const devtool = 'source-map';
 
 
 const entry = {
-    app: ['babel-polyfill', path.resolve(__dirname, 'src/app/app.module.js')]
+    app: [
+        'babel-polyfill',
+        path.resolve(__dirname, 'src/app/app.module.js')
+    ]
 };
 
 const _module = {

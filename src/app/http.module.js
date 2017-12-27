@@ -14,5 +14,5 @@ class ProductService extends Http {
 
 export default angular
     .module('app.http', [NgResourceModule])
-    .service('productService', ProductService)
+    .service('ProductService', ProductService)
     .name

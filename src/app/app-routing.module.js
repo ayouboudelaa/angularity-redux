@@ -27,7 +27,7 @@ const ROUTES = [
             }
         }
     }, {
-        name: 'productsList',
+        name: 'products',
         config: {
             url: '/products',
             views: {
@@ -38,7 +38,7 @@ const ROUTES = [
             }
         }
     }, {
-        name: 'productsList.productDetails',
+        name: 'products.productDetails',
         config: {
             url: '/:id',
             views: {

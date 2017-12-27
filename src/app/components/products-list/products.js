@@ -4,7 +4,7 @@ import INITIAL_STATE from '../../app.state'
 
 const actions = createActions({
     app: {
-        productsList: {
+        products: {
             FETCH: resource => resource.getAll(),
             FETCH_SUCCESS: products => products,
             FETCH_FAILURE: error => error,
@@ -13,10 +13,10 @@ const actions = createActions({
     }
 })
 
-export const fetchProducts = actions.app.productsList.fetch
-export const fetchProductsSuccess = actions.app.productsList.fetchSuccess
-export const fetchProductsFailure = actions.app.productsList.fetchFailure
-export const resetProducts = actions.app.productsList.reset
+export const fetchProducts = actions.app.products.fetch
+export const fetchProductsSuccess = actions.app.products.fetchSuccess
+export const fetchProductsFailure = actions.app.products.fetchFailure
+export const resetProducts = actions.app.products.reset
 
 const reducer = handleActions({
     [fetchProducts](state) {

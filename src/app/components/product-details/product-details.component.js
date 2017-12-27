@@ -1,20 +1,24 @@
-import { fetchProduct, fetchProductSuccess, fetchProductFailure, resetCurrentProduct } from './product-details'
+import {
+    fetchProduct,
+    fetchProductSuccess,
+    fetchProductFailure,
+    resetCurrentProduct
+} from './current-product'
 
 class ProductDetailsComponent {
-    constructor($ngRedux, $stateParams, productService) {
+    constructor($ngRedux, ProductService) {
         'ngInject'
 
         this._$ngRedux = $ngRedux
-        this._$stateParams = $stateParams
-        this._productService = productService
+        this._ProductService = ProductService
     }
 
     $onInit() {
         this._unsubscribe = this._$ngRedux.connect(
-            state => ({ currentProduct: state.currentProduct }),
+            state => ({ currentProduct: state.currentProduct, router: state.router }),
             dispatch => ({
                 fetchProduct: (id) => {
-                    dispatch(fetchProduct(this._productService, id)).then(response => {
+                    dispatch(fetchProduct(this._ProductService, id)).then(response => {
                         response.error ?
                             dispatch(fetchProductFailure(response.payload)) :
                             dispatch(fetchProductSuccess(response.payload))
@@ -23,7 +27,7 @@ class ProductDetailsComponent {
             })
         )(this)
 
-        this.fetchProduct(this._$stateParams.id)
+        this.fetchProduct(this.router.currentParams.id)
     }
 
     $OnDestroy() {
