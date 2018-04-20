@@ -8,8 +8,9 @@ const webpack = require('webpack');
 
 const CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 const ProvidePlugin = webpack.ProvidePlugin;
-const devtool = 'source-map';
 
+
+const devtool = 'source-map';
 
 const entry = {
     app: [

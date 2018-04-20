@@ -1,13 +1,16 @@
 {
   "name": "angularity-redux",
   "version": "1.0.0",
-  "description": "AngularJS with ES6 and Redux.",
+  "description": "AngularJS starter application based on Redux.",
   "scripts": {
     "build": "webpack --config production.js",
     "start": "concurrently --kill-others \"webpack-dev-server --config development.js\" \"json-server --watch db.json --port 3005\""
   },
   "author": "Ayoub Ba",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+  	"AngularJS", "Redux", "ES6"
+  ],
   "dependencies": {
     "@uirouter/angularjs": "^1.0.11",
     "angular": "^1.6.7",
