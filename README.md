@@ -8,3 +8,6 @@ AngularJS starter application based on Redux.
 - Inspired ducks-modular-redux module architecture.
 - Material Design style using AngularJS-Material.
 - ES6, SCSS, Webpack 3 ... and more stuff.
+
+### Missing Features
+- Production build configuration.
